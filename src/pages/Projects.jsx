@@ -7,7 +7,7 @@ const projects = [
   {
     title: 'JohnsonHe.com',
     description: 'Personal website designed and built up from scratch.',
-    tags: ['Swift', 'Figma', 'SQL', 'Python'],
+    tags: ['JS', 'HTML', 'CSS'],
     fullDescription: 'Personal website designed and built up from scratch, 2 distinct themes (minimal + modern) accessed by top right *, and complete with custom interactive easter eggs (try left and right clicking on min theme).' ,
     images: [],
     video: null,
