@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased;
+    transition: background-color 0.5s ease, color 0.3s ease;
+  }
+  
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-current;
+  }
+  
+  /* Selection styling */
+  ::selection {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .theme-jarcos ::selection {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Theme transition utilities */
+@layer utilities {
+  .theme-transition {
+    @apply transition-all duration-500 ease-out;
+  }
+  
+  .image-fade {
+    @apply transition-opacity duration-1000 ease-in-out;
+  }
+  
+  /* Staggered animation delays */
+  .stagger-1 { animation-delay: 100ms; }
+  .stagger-2 { animation-delay: 200ms; }
+  .stagger-3 { animation-delay: 300ms; }
+  .stagger-4 { animation-delay: 400ms; }
+  .stagger-5 { animation-delay: 500ms; }
+}
+
+/* P.CV Theme Styles */
+.theme-pcv {
+  --bg: #0066ff;
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.7);
+  --border: rgba(255, 255, 255, 0.2);
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Jarcos Theme Styles */
+.theme-jarcos {
+  --bg: #0a0a0a;
+  --text: #ffffff;
+  --accent: #ff4d4d;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Custom scrollbar for Jarcos theme */
+.theme-jarcos::-webkit-scrollbar {
+  width: 8px;
+}
+
+.theme-jarcos::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+.theme-jarcos::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+.theme-jarcos::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* Image lightbox backdrop blur */
+.backdrop-blur-custom {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Large text with inverted colors for Jarcos */
+.text-inverted {
+  mix-blend-mode: difference;
+}
+
+/* Carousel fade animation */
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+/* Hover lift effect */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* Link underline animation */
+.link-underline {
+  position: relative;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* Page enter animation */
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-enter {
+  animation: pageEnter 0.6s ease-out forwards;
+}
+
+/* Responsive text sizing */
+@media (max-width: 640px) {
+  .text-responsive-xl {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+  
+  .text-responsive-2xl {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+}
