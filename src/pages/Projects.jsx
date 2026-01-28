@@ -12,7 +12,7 @@ const projects = [
     images: [],
     video: null,
     links: [
-      { label: 'Github', url: 'https://github.com/johnsonhe/gallerist' }
+      { label: 'Github', url: 'https://github.com/johnsonhe/johnsonhe.github.io' }
     ],
   },
   {
@@ -33,7 +33,7 @@ const projects = [
     video: null,
     links: [
       { label: 'App Store (Coming Soon)', url: null },
-      { label: 'Github', url: 'https://github.com/johnsonhe/gallerist' }
+      { label: 'Github (private)', url: 'https://github.com/johnsonhe/gallerist' }
     ],
   },
   {
@@ -44,7 +44,7 @@ const projects = [
     images: [],
     video: '/project2/DemoVideo.mp4',
     links: [
-      { label: 'GitHub', url: 'https://github.com/johnsonhe/Kalshi-Resolution-Analyzer' },
+      { label: 'GitHub (private)', url: 'https://github.com/johnsonhe/Kalshi-Resolution-Analyzer' },
     ],
   },
   {
