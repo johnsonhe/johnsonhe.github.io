@@ -5,7 +5,7 @@ export default function PCVLayout({ children, fullHeight = false }) {
         fullHeight ? 'h-screen overflow-hidden' : 'min-h-screen'
       }`}
     >
-      <div className="max-w-3xl pl-32 md:pl-40 pr-6 pt-20 pb-12">
+      <div className="ml-28 md:ml-36 px-6 md:px-8 pt-20 pb-12 max-w-4xl">
         {children}
       </div>
     </div>
