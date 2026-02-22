@@ -17,9 +17,9 @@ export function ThemeProvider({ children }) {
     // Initialize from localStorage or default to 'pcv'
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('portfolio-theme')
-      return saved && Object.values(THEMES).includes(saved) ? saved : THEMES.PCV
+      return saved && Object.values(THEMES).includes(saved) ? saved : THEMES.JARCOS
     }
-    return THEMES.PCV
+    return THEMES.JARCOS
   })
 
   useEffect(() => {
