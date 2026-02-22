@@ -3,7 +3,7 @@ import PCVLayout from '../themes/pcv/PCVLayout'
 import JarcosLayout from '../themes/jarcos/JarcosLayout'
 
 const socialLinks = [
-  { name: 'Email', href: 'mailto:johnsonhe@columbia.edu', handle: 'johnsonhe@columbia.edu' },
+  { name: 'Email', href: 'mailto:johnson.he@columbia.edu', handle: 'johnsonhe@columbia.edu' },
   { name: 'GitHub', href: 'https://github.com/johnsonhe', handle: '@johnsonhe' },
   { name: 'LinkedIn', href: 'https://linkedin.com/in/johnson-he', handle: '/in/johnson-he' },
   { name: 'Instagram', href: 'https://instagram.com/jhqs_', handle: '@jhqs_' },
