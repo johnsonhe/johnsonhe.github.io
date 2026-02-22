@@ -46,7 +46,7 @@ function ContactContent() {
       {/* Primary CTA - Email */}
       <div className="mt-12">
         <a 
-          href="mailto:johnsonhe@columbia.edu"
+          href="mailto:johnson.he@columbia.edu"
           className={`
             inline-flex items-center gap-3 px-6 py-4 rounded-xl transition-all duration-300
             ${isPCV 
