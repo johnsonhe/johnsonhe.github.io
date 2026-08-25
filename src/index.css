@@ -151,6 +151,19 @@
   animation: pageEnter 0.6s ease-out forwards;
 }
 
+/* Pulse spin animation for theme switcher */
+@keyframes pulse-spin {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.8) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
 /* Responsive text sizing */
 @media (max-width: 640px) {
   .text-responsive-xl {

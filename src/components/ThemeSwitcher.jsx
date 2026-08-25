@@ -35,11 +35,15 @@ export default function ThemeSwitcher() {
     <div className="fixed top-4 right-6 z-50" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`w-12 h-12 rounded-full flex items-center justify-center transition-all text-2xl font-light ${
+        className={`w-12 h-12 rounded-full flex items-center justify-center text-2xl font-light ${
           isPCV 
             ? 'text-[#0066ff] hover:text-[#0066ff]/70' 
             : 'text-white hover:text-white/70'
         }`}
+        style={{
+          animation: 'pulse-spin 0.6s ease-in-out 7s forwards',
+          transformOrigin: 'center center',
+        }}
         aria-label="Switch theme"
         aria-expanded={isOpen}
       >

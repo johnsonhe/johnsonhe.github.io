@@ -118,6 +118,7 @@ function AboutContent() {
 
         <div className={`space-y-6 ${isPCV ? 'max-w-xl' : 'max-w-2xl'}`}>
           {[
+            { role: 'AI Consultant', company: 'The RealReal', period: '2026' },
             { role: 'Software & Data Engineer', company: 'RTX', period: '2023 — 2025' },
             { role: 'Software Development Intern', company: 'Amazon', period: '2022' },
             { role: 'Ohzone', company: 'Software & Data Intern', period: '2021' },
