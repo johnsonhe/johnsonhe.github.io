@@ -148,6 +148,10 @@ export default function PCVHome() {
             <span className="text-[#0066ff]/70">2025 + ....</span>
           </div>
           <div className="flex gap-4">
+            <span className="w-16">The RealReal</span>
+            <span className="text-[#0066ff]/70">2026</span>
+          </div>
+          <div className="flex gap-4">
             <span className="w-16">RTX</span>
             <span className="text-[#0066ff]/70">2023 → 2025</span>
           </div>
